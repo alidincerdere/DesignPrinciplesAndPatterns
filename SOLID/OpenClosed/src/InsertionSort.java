@@ -1,14 +1,10 @@
 /**
  * Created by adere on 16.05.2019.
  */
-public class InsertionSort extends Sorter {
-
-    public InsertionSort() {
-        this.type = SortTypes.INSERTIONSORT;
-    }
+public class InsertionSort implements Sorter {
 
     @Override
-    protected void sort() {
+    public void sort() {
         System.out.println("Sorting with insertion sort...");
     }
 }

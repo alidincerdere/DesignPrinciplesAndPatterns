@@ -2,14 +2,10 @@
 /**
  * Created by adere on 16.05.2019.
  */
-public class MergeSort extends Sorter {
-
-    public MergeSort() {
-        this.type = SortTypes.MERGESORT;
-    }
+public class MergeSort implements Sorter {
 
     @Override
-    protected void sort() {
+    public void sort() {
 
         System.out.println("Sorting with merge sort...");
     }

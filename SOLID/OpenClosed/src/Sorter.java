@@ -1,9 +1,7 @@
 /**
  * Created by adere on 16.05.2019.
  */
-public abstract class Sorter {
+public interface Sorter {
 
-    protected SortTypes type;
-
-    protected abstract void sort();
+    void sort();
 }
