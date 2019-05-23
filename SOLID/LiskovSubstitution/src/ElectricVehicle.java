@@ -1,8 +1,7 @@
 /**
  * Created by adere on 23.05.2019.
  */
-public interface Vehicle {
-
+public interface ElectricVehicle {
     void speed();
-    void addFuel();
+    void chargeBattery();
 }
