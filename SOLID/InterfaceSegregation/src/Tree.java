@@ -6,6 +6,4 @@ public interface Tree {
     int findMax();
     int finnMin();
     int traverse();
-    void rightRotation();
-    void leftRotation();
 }

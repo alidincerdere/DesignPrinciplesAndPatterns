@@ -1,7 +1,7 @@
 /**
  * Created by adere on 23.05.2019.
  */
-public class BalancedTree implements Tree {
+public class BalancedTree implements Tree, IBalancedTree {
     @Override
     public int findMax() {
         return 0;

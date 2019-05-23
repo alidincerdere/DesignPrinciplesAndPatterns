@@ -16,16 +16,4 @@ public class BinarySearchTree implements Tree{
     public int traverse() {
         return 0;
     }
-
-    @Override
-    public void rightRotation() {
-
-        //do nothing...
-    }
-
-    @Override
-    public void leftRotation() {
-
-        //do nothing...
-    }
 }
