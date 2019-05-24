@@ -3,18 +3,24 @@
  */
 public class DatabaseHandler {
 
-    private MySQLDatabase mySQLDatabase;
-    private OracleDatabase oracleDatabase;
+    //this does nont knonw anything about database
 
-    public DatabaseHandler() {
-        this.mySQLDatabase = new MySQLDatabase();
+    //no instantiation !!!
+
+    //loose coupling
+
+    //no need to modify this code to use another database
+    private Database database;
+
+    public DatabaseHandler(Database database) {
+        this.database = database;
     }
 
     public void connect() {
-        mySQLDatabase.connect();
+        database.connect();
     }
 
     public void disconnect() {
-        mySQLDatabase.disconnect();
+        database.disconnect();
     }
 }

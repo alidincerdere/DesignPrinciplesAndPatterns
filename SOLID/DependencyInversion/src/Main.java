@@ -33,6 +33,21 @@ how ?
 - using service locator pattern
 - dependency injection
 
+
+PACKAGE A                         PACKAGE B
+
+OBJECT A                          OBJECT B
+
+   |                                 |
+   |                                 |
+   |  Reference                      |
+   |                                 |
+   V                                 |
+Interface A  <-----------------------
+
+
+High level modules should not depend on low level modules directly
+
 */
 
 public class Main {
@@ -40,7 +55,8 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello World!");
 
-        DatabaseHandler databaseHandler = new DatabaseHandler();
+        //inject via constructor
+        DatabaseHandler databaseHandler = new DatabaseHandler(new OracleDatabase());
 
         databaseHandler.connect();
         databaseHandler.disconnect();
