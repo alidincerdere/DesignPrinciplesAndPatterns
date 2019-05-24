@@ -3,9 +3,11 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello World!");
 
-        Book book = new Book("tontiş", 123);
+        Book book = new Book("tontiş", 123, new BookPersistence());
 
-        book.printAndSave();
+        book.print();
+
+        book.save();
 
 
     }

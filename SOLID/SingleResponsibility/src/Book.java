@@ -1,11 +1,13 @@
 /**
  * Created by adere on 24.05.2019.
  */
-public class Book {
+public class Book implements BookHandler {
 
     private String authorname;
 
     private int numOfPages;
+
+    private BookPersistence bookPersistence;
 
     public String getAuthorname() {
         return authorname;
@@ -23,13 +25,20 @@ public class Book {
         this.numOfPages = numOfPages;
     }
 
-    public Book(String authorname, int numOfPages) {
+    public Book(String authorname, int numOfPages, BookPersistence bookPersistence) {
         this.authorname = authorname;
         this.numOfPages = numOfPages;
+        this.bookPersistence = bookPersistence;
     }
 
-    public void printAndSave() {
+    @Override
+    public void print() {
         System.out.println("Printing the book ...");
-        System.out.println("Saving the book ...");
+    }
+
+    @Override
+    public void save() {
+
+        bookPersistence.save(this);
     }
 }
