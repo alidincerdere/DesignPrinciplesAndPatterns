@@ -1,3 +1,6 @@
+package BehavioralDesignPatterns.StrategyPattern;
+
+
 /**
  * Created by adere on 19.06.2019.
  */

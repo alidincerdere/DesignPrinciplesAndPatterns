@@ -10,7 +10,7 @@ public class Main {
         WhetherStation whetherStation = new WhetherStation();
 
         WhetherObserver whetherObserver = new WhetherObserver(whetherStation);
-        
+
         whetherStation.setHumidity(100);
         whetherStation.setPressure(200);
         whetherStation.setTemperature(300);
